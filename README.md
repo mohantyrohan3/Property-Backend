@@ -28,6 +28,35 @@ A powerful and efficient backend service for property listings, built using **No
 
 ---
 
+
+## API Routes
+
+### User Routes
+- `POST /user/register`
+- `POST /user/login`
+- `POST /user/logout`
+- `GET /user/details`
+
+### Property Routes
+- `GET /property/get-all`
+- `GET /property/get-user-properties`
+- `DELETE /property/delete/:id`
+- `PUT /property/update/:id`
+
+### Favorite Routes
+- `POST /favorite/add`
+- `GET /favorite/get-all`
+- `DELETE /favorite/delete/:id`
+
+### Search Routes
+- `GET /search/?`
+
+### Recommendation Routes
+- `GET /recommend/get-all`
+- `POST /recommend/recommend-property`
+
+---
+
 ## 🔐 Environment Variables
 
 Create a `.env` file in the root directory:
